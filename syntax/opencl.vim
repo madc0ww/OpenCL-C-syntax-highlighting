@@ -4,12 +4,12 @@
 " Version:      1.0
 " Last Change:  2010-02-24
 
-" Usage: 
+" Usage:
 "
 "   Source it from somewhere
 "
 " cl.h
-" 
+"
 " Data Types
   syntax keyword clType cl_char
   syntax keyword clType cl_uchar
@@ -78,13 +78,13 @@
   syntax keyword clConstant CL_PLATFORM_NAME
   syntax keyword clConstant CL_PLATFORM_VENDOR
   syntax keyword clConstant CL_PLATFORM_EXTENSIONS
-  " 
-  syntax keyword clConstant CL_DEVICE_TYPE_DEFAULT 
+  "
+  syntax keyword clConstant CL_DEVICE_TYPE_DEFAULT
   syntax keyword clConstant CL_DEVICE_TYPE_CPU
   syntax keyword clConstant CL_DEVICE_TYPE_GPU
   syntax keyword clConstant CL_DEVICE_TYPE_ACCELERATOR
   syntax keyword clConstant CL_DEVICE_TYPE_ALL
-  "  
+  "
   syntax keyword clConstant CL_DEVICE_TYPE
   syntax keyword clConstant CL_DEVICE_VENDOR_ID
   syntax keyword clConstant CL_DEVICE_MAX_COMPUTE_UNITS
@@ -379,7 +379,7 @@
   syntax keyword clConstant CL_IMAGE_FORMAT_NOT_SUPPORTED
   syntax keyword clConstant CL_BUILD_PROGRAM_FAILURE
   syntax keyword clConstant CL_MAP_FAILURE
-  "  
+  "
   syntax keyword clConstant CL_INVALID_VALUE
   syntax keyword clConstant CL_INVALID_DEVICE_TYPE
   syntax keyword clConstant CL_INVALID_PLATFORM
@@ -505,13 +505,11 @@
   syntax keyword clFunction clEnqueueMarker
   syntax keyword clFunction clEnqueueWaitForEvents
   syntax keyword clFunction clEnqueueBarrier
-" 
+"
 "
 " cl_gl.h
 "
-if !exists ("c_opencl_no_gl")
-"
-" Data Types
+if !exists("c_opencl_no_gl")
   syntax keyword clType cl_gl_object_type
   syntax keyword clType cl_gl_texture_info
   syntax keyword clType cl_gl_platform_info
@@ -524,7 +522,7 @@ if !exists ("c_opencl_no_gl")
   syntax keyword clConstant CL_GL_OBJECT_TEXTURE3D
   syntax keyword clConstant CL_GL_OBJECT_RENDERBUFFER
   "
-  " cl_gl_object_type 
+  " cl_gl_object_type
   syntax keyword clConstant CL_GL_TEXTURE_TARGET
   syntax keyword clConstant CL_GL_MIPMAP_LEVEL
   "
@@ -542,7 +540,7 @@ if !exists ("c_opencl_no_gl")
   syntax keyword clConstant CL_INVALID_GL_SHAREGROUP_REFERENCE_KHR
 "
 "
-" Functions  
+" Functions
   syntax keyword clFunction clCreateFromGLBuffer
   syntax keyword clFunction clCreateFromGLTexture2D
   syntax keyword clFunction clCreateFromGLTexture3D
